@@ -22,7 +22,7 @@ spec:
   resourceSelectors:
     - apiVersion: helm.toolkit.fluxcd.io/v2beta1
       kind: HelmRelease
-      name: {{ .Release.Name }}
+      name: {{ .Release.Name }}-release
   placement:
     clusterAffinity:
       clusterNames:

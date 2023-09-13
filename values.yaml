@@ -1,0 +1,17 @@
+clusters:
+  - cluster1
+  - cluster2
+helm:
+  repo:
+    url: https://stefanprodan.github.io/podinfo
+  chart:
+    name: podinfo
+    version: 5.0.3
+route:
+  hostname:
+    enabled: true
+    url: my.podinfo.com
+  path: /
+  backendRefs:
+    name: podinfo
+    port: 9898
